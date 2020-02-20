@@ -84,7 +84,7 @@ public class Game {
     public boolean isBoardFull() {
         for (Cell[] row : cells)
             for (Cell cell : row)
-                if (cell == null || cell.equals(0))
+                if (cell == null || cell.isEmpty())
                     return false;
         return true;
     }
